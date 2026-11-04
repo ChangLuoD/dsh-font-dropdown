@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Font dropdowns",
+    "description": "Choose text, code and terminal fonts from the fonts installed on this machine instead of typing a font name."
+  }
+}

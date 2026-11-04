@@ -1,0 +1,58 @@
+{
+  "name": "dsh-font-dropdown",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: turn the shipped free-text font-family inputs into searchable dropdowns of the fonts installed on this machine.",
+  "license": "MIT",
+  "author": "ChangLuoD",
+  "homepage": "https://github.com/ChangLuoD/dsh-font-dropdown#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChangLuoD/dsh-font-dropdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChangLuoD/dsh-font-dropdown/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "font",
+    "font-family",
+    "dropdown",
+    "settings"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

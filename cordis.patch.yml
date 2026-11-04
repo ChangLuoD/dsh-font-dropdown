@@ -1,0 +1,6 @@
+# Bundle patch for dsh-font-dropdown.
+# The Host half answers GET /plugins/font-dropdown/fonts with the installed font
+# families; the browser half renders the dropdown rows in Settings.
+- insert:
+    - id: font-dropdown
+      name: 'dsh-font-dropdown'
